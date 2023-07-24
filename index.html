@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link href="css/fontello.css" rel="stylesheet">
+  <link href="css/buttonStyles.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+
+<body>
+  <header>
+    <nav class="mynav">
+      <h1 class="logoBlock">SneakStore</h1>
+      <div class="links">
+        <a href="#"><p>Men</p></a>
+        <a href="#"><p>Women</p></a>
+        <a href="#"><p>Kids</p></a>
+        <a href="#"><p>Classic</p></a>
+        <a href="#"><p>New Article</p></a>
+      </div>
+      <div class="favouriteAndCart">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-regular fa-heart"></i>
+      </div>
+      <!-- <div class="searchBlock">
+        <input type="text" placeholder="Search..."></input>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div> -->
+     
+    </nav>
+  </header>
+  <!-- <div class="container-fluid">
+    <div class="row">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Бонусы</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Доставка</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">О компании</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div> -->
+
+  <section class="mySlider">
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/sneakers1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/sneakers2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="images/sneakers3.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="sneakersCatalog">
+    <div class="mycontainer">
+      <div class="sortingAndH">
+        <div class="h">
+          <h1 class="text-uppercase">All goods</h1>
+        </div>
+        <div class="sorting">
+          <p>Sorting by: </p>
+          <!-- <select>
+            <option>A-Z</option>
+            <option>Cheap first</option>
+            <option>Expensive first</option>
+          </select> -->
+          <select class="form-select" aria-label="Default select example">
+            <option value="1" selected>A-Z</option>
+            <option value="2">Cheap first</option>
+            <option value="3">Expensive first</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="cards">
+       
+        <div class="mycard">
+          <div class="card-header">
+            <img src="images/nike.png">
+            <p>$15.00</p>
+          </div>
+          <div class="card-imgBlock">
+            <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+          </div>
+          <div class="card-footer">
+            <h5>Piy piy</h5>
+            <p>Piri piri</p>
+          </div>
+        </div>
+
+        <div class="mycard">
+          <div class="card-header">
+            <img src="images/nike.png">
+            <p>$15.00</p>
+          </div>
+          <div class="card-imgBlock">
+            <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+          </div>
+          <div class="card-footer">
+            <h5>Piy piy</h5>
+            <p>Piri piri</p>
+          </div>
+        </div>
+
+        <div class="mycard">
+          <div class="card-header">
+            <img src="images/nike.png">
+            <p>$15.00</p>
+          </div>
+          <div class="card-imgBlock">
+            <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+          </div>
+          <div class="card-footer">
+            <h5>Piy piy</h5>
+            <p>Piri piri</p>
+          </div>
+        </div>
+
+        <div class="mycard">
+          <div class="card-header">
+            <img src="images/nike.png">
+            <p>$15.00</p>
+          </div>
+          <div class="card-imgBlock">
+            <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+          </div>
+          <div class="card-footer">
+            <h5>Piy piy</h5>
+            <p>Piri piri</p>
+          </div>
+        </div>
+
+        <div class="mycard">
+          <div class="card-header">
+            <img src="images/nike.png">
+            <p>$15.00</p>
+          </div>
+          <div class="card-imgBlock">
+            <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+          </div>
+          <div class="card-footer">
+            <h5>Piy piy</h5>
+            <p>Piri piri</p>
+          </div>
+        </div>
+
+        <div class="mycard">
+          <div class="card-header">
+            <img src="images/nike.png">
+            <p>$15.00</p>
+          </div>
+          <div class="card-imgBlock">
+            <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+          </div>
+          <div class="card-footer">
+            <h5>Piy piy</h5>
+            <p>Piri piri</p>
+          </div>
+        </div>
+
+        <div class="mycard">
+          <div class="card-header">
+            <img src="images/nike.png">
+            <p>$15.00</p>
+          </div>
+          <div class="card-imgBlock">
+            <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+          </div>
+          <div class="card-footer">
+            <h5>Piy piy</h5>
+            <p>Piri piri</p>
+          </div>
+        </div>
+
+        <div class="mycard">
+          <div class="card-header">
+            <img src="images/nike.png">
+            <p>$15.00</p>
+          </div>
+          <div class="card-imgBlock">
+            <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+          </div>
+          <div class="card-footer">
+            <h5>Piy piy</h5>
+            <p>Piri piri</p>
+          </div>
+        </div>
+
+      </div>
+
+      <button type="button" class="btn  btn-outline-light btnSecond">View all</button>
+
+    </div>
+  </section>
+ 
+  <section class="newArticleBlock">
+    <div class="myContainer">
+      <div class="HAndMore">
+        <div class="h">
+          <h1 class="text-uppercase">New Article</h1>
+        </div>
+        <button type="button" class="btn btn-dark myDarkBtn text-uppercase">View More</button>
+      </div>
+      <div class="sliderBlock">
+        <div class="wrapper">
+          <i id="leftTop" class="fa-solid fa-angle-left"></i>
+          <div class="carouselItemsNew">
+              <div class="sneaker" draggable="false">
+                <div class="mycard">
+                  <div class="card-header">
+                    <img src="images/nike.png">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="card-imgBlock">
+                    <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+                  </div>
+                  <div class="card-footer">
+                    <h5>Piy piy</h5>
+                    <p>Piri piri</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sneaker" draggable="false">
+                <div class="mycard">
+                  <div class="card-header">
+                    <img src="images/nike.png">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="card-imgBlock">
+                    <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+                  </div>
+                  <div class="card-footer">
+                    <h5>Piy piy</h5>
+                    <p>Piri piri</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sneaker" draggable="false">
+                <div class="mycard">
+                  <div class="card-header">
+                    <img src="images/nike.png">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="card-imgBlock">
+                    <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+                  </div>
+                  <div class="card-footer">
+                    <h5>Piy piy</h5>
+                    <p>Piri piri</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sneaker" draggable="false">
+                <div class="mycard">
+                  <div class="card-header">
+                    <img src="images/nike.png">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="card-imgBlock">
+                    <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+                  </div>
+                  <div class="card-footer">
+                    <h5>Piy piy</h5>
+                    <p>Piri piri</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sneaker" draggable="false">
+                <div class="mycard">
+                  <div class="card-header">
+                    <img src="images/nike.png">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="card-imgBlock">
+                    <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+                  </div>
+                  <div class="card-footer">
+                    <h5>Piy piy</h5>
+                    <p>Piri piri</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sneaker" draggable="false">
+                <div class="mycard">
+                  <div class="card-header">
+                    <img src="images/nike.png">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="card-imgBlock">
+                    <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+                  </div>
+                  <div class="card-footer">
+                    <h5>Piy piy</h5>
+                    <p>Piri piri</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sneaker" draggable="false">
+                <div class="mycard">
+                  <div class="card-header">
+                    <img src="images/nike.png">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="card-imgBlock">
+                    <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+                  </div>
+                  <div class="card-footer">
+                    <h5>Piy piy</h5>
+                    <p>Piri piri</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sneaker" draggable="false">
+                <div class="mycard">
+                  <div class="card-header">
+                    <img src="images/nike.png">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="card-imgBlock">
+                    <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+                  </div>
+                  <div class="card-footer">
+                    <h5>Piy piy</h5>
+                    <p>Piri piri</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sneaker" draggable="false">
+                <div class="mycard">
+                  <div class="card-header">
+                    <img src="images/nike.png">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="card-imgBlock">
+                    <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+                  </div>
+                  <div class="card-footer">
+                    <h5>Piy piy</h5>
+                    <p>Piri piri</p>
+                  </div>
+                </div>
+              </div>
+            <!-- <img src="images/olga.jpg" alt="img" draggable="false">
+            <img src="images/maria.jpg" alt="img" draggable="false">
+            <img src="images/tatyana.jpg" alt="img" draggable="false">
+            <img src="images/daria.jpg" alt="img" draggable="false">
+            <img src="images/olga.jpg" alt="img" draggable="false">
+            <img src="images/maria.jpg" alt="img" draggable="false">
+            <img src="images/tatyana.jpg" alt="img" draggable="false">
+            <img src="images/daria.jpg" alt="img" draggable="false">
+            <img src="images/man.jpg" alt="img" draggable="false"> -->
+          </div>
+          <i id="rightTop" class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="dealOfTheDayBlock">
+    <div class="myContainer">
+      <div class="HAndMore">
+        <div class="h">
+          <h1 class="text-uppercase">Deal Of The day</h1>
+        </div>
+        <button type="button" class="btn btn-dark myDarkBtn text-uppercase">View More</button>
+      </div>
+      <div class="sliderBlock">
+        <div class="wrapper">
+          <i id="leftBottom" class="fa-solid fa-angle-left"></i>
+          <div class="carouselItemsDeal">
+              <div class="sneaker" draggable="false">
+                <div class="mycard">
+                  <div class="card-header">
+                    <img src="images/nike.png">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="card-imgBlock">
+                    <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+                  </div>
+                  <div class="card-footer">
+                    <h5>Piy piy</h5>
+                    <p>Piri piri</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sneaker" draggable="false">
+                <div class="mycard">
+                  <div class="card-header">
+                    <img src="images/nike.png">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="card-imgBlock">
+                    <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+                  </div>
+                  <div class="card-footer">
+                    <h5>Piy piy</h5>
+                    <p>Piri piri</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sneaker" draggable="false">
+                <div class="mycard">
+                  <div class="card-header">
+                    <img src="images/nike.png">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="card-imgBlock">
+                    <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+                  </div>
+                  <div class="card-footer">
+                    <h5>Piy piy</h5>
+                    <p>Piri piri</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sneaker" draggable="false">
+                <div class="mycard">
+                  <div class="card-header">
+                    <img src="images/nike.png">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="card-imgBlock">
+                    <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+                  </div>
+                  <div class="card-footer">
+                    <h5>Piy piy</h5>
+                    <p>Piri piri</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sneaker" draggable="false">
+                <div class="mycard">
+                  <div class="card-header">
+                    <img src="images/nike.png">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="card-imgBlock">
+                    <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+                  </div>
+                  <div class="card-footer">
+                    <h5>Piy piy</h5>
+                    <p>Piri piri</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sneaker" draggable="false">
+                <div class="mycard">
+                  <div class="card-header">
+                    <img src="images/nike.png">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="card-imgBlock">
+                    <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+                  </div>
+                  <div class="card-footer">
+                    <h5>Piy piy</h5>
+                    <p>Piri piri</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sneaker" draggable="false">
+                <div class="mycard">
+                  <div class="card-header">
+                    <img src="images/nike.png">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="card-imgBlock">
+                    <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+                  </div>
+                  <div class="card-footer">
+                    <h5>Piy piy</h5>
+                    <p>Piri piri</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sneaker" draggable="false">
+                <div class="mycard">
+                  <div class="card-header">
+                    <img src="images/nike.png">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="card-imgBlock">
+                    <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+                  </div>
+                  <div class="card-footer">
+                    <h5>Piy piy</h5>
+                    <p>Piri piri</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sneaker" draggable="false">
+                <div class="mycard">
+                  <div class="card-header">
+                    <img src="images/nike.png">
+                    <p>$15.00</p>
+                  </div>
+                  <div class="card-imgBlock">
+                    <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+                  </div>
+                  <div class="card-footer">
+                    <h5>Piy piy</h5>
+                    <p>Piri piri</p>
+                  </div>
+                </div>
+              </div>
+            <!-- <img src="images/olga.jpg" alt="img" draggable="false">
+            <img src="images/maria.jpg" alt="img" draggable="false">
+            <img src="images/tatyana.jpg" alt="img" draggable="false">
+            <img src="images/daria.jpg" alt="img" draggable="false">
+            <img src="images/olga.jpg" alt="img" draggable="false">
+            <img src="images/maria.jpg" alt="img" draggable="false">
+            <img src="images/tatyana.jpg" alt="img" draggable="false">
+            <img src="images/daria.jpg" alt="img" draggable="false">
+            <img src="images/man.jpg" alt="img" draggable="false"> -->
+          </div>
+          <i id="rightBottom" class="fa-solid fa-angle-right"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>©2023 SneakStore. All rights reserved.</p>
+    <div class="social">
+      <a href="https://www.instagram.com/arspalazzz/"><p class="text-uppercase">instagram</p></a>
+      <a href="linkedin.com/in/arseniy-palaznik-ba7b41263"><p class="text-uppercase">linkedin</p></a>
+      <a href="https://github.com/ArsPalazzz"><p class="text-uppercase">github</p></a>
+      <a href="https://t.me/arsPalazzz"><p class="text-uppercase">telegram</p></a>
+    </div>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/sliderTop.js"></script>
+  <script src="js/sliderBottom.js"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>

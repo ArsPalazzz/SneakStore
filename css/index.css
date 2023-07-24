@@ -1,0 +1,536 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Nevduplenysh;
+  src: url("../font/Nevduplenysh/Nevduplenysh-Regular.otf");
+}
+@font-face {
+  font-family: Akshar;
+  src: url("../font/Akshar/Akshar-Light.ttf");
+}
+@font-face {
+  font-family: InterBold;
+  src: url("../font/Inter/Inter-Bold.otf");
+}
+.mySlider .carousel-item {
+  /* display: flex; */
+  max-height: 500px;
+}
+
+.mySlider .carousel-item img {
+  object-fit: cover;
+  position: relative;
+  top: -200px;
+}
+
+header .mynav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 84%;
+  margin: auto;
+}
+header .mynav .logoBlock {
+  font-family: Akshar;
+  font-size: 3vw;
+  margin: 1vh 0;
+}
+header .mynav .links {
+  display: flex;
+  flex-direction: row;
+}
+header .mynav .links a {
+  display: inline-block;
+  margin-right: 2vw;
+  text-decoration: none;
+}
+header .mynav .links a p {
+  margin-bottom: 0;
+  font-size: 1.1em;
+  transition: all 0.3s linear;
+  border: 0 solid black;
+}
+header .mynav .links a p::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: #5D5D5D;
+  height: 1px;
+  transition: all 0.3s;
+  transform: scale(0);
+}
+header .mynav .links a p:hover::after {
+  transform: scale(1);
+}
+header .mynav .links a:link, header .mynav .links a:visited {
+  color: #5D5D5D;
+  font-family: Akshar;
+}
+header .mynav .favouriteAndCart {
+  display: flex;
+  width: 5%;
+  justify-content: space-between;
+}
+header .mynav .favouriteAndCart i {
+  cursor: pointer;
+  transform: scale(1.6);
+  display: inline-block;
+  transition: all 0.2s linear;
+}
+header .mynav .favouriteAndCart i:hover {
+  transform: scale(1.85);
+}
+
+.sneakersCatalog {
+  margin-top: 8vh;
+  width: 100%;
+}
+.sneakersCatalog .mycontainer {
+  width: 84%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sneakersCatalog .mycontainer .sortingAndH {
+  display: flex;
+  margin-bottom: 3vh;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sneakersCatalog .mycontainer .sortingAndH .h h1 {
+  font-size: 3vw;
+  font-family: Nevduplenysh;
+}
+.sneakersCatalog .mycontainer .sortingAndH .sorting {
+  display: flex;
+  align-items: center;
+}
+.sneakersCatalog .mycontainer .sortingAndH .sorting p {
+  margin-bottom: 0;
+  margin-right: 2vw;
+  font-size: 1.2rem;
+}
+.sneakersCatalog .mycontainer .sortingAndH .sorting select {
+  padding: 1vh 1vw;
+  width: 12vw;
+  cursor: pointer;
+}
+.sneakersCatalog .mycontainer .cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.sneakersCatalog .mycontainer .cards .mycard {
+  width: 18vw;
+  /* height: 40vh; */
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #5D5D5D;
+  margin-bottom: 5vh;
+}
+.sneakersCatalog .mycontainer .cards .mycard .card-header {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 1.4vh 1.4vw;
+  /* font-weight: bold; */
+}
+.sneakersCatalog .mycontainer .cards .mycard .card-header img {
+  width: 16%;
+  display: block;
+}
+.sneakersCatalog .mycontainer .cards .mycard .card-header p {
+  margin-bottom: 0;
+  font-family: InterBold;
+  font-size: 1.2rem;
+}
+.sneakersCatalog .mycontainer .cards .mycard .card-imgBlock {
+  width: 100%;
+  height: 18vw;
+}
+.sneakersCatalog .mycontainer .cards .mycard .card-imgBlock img {
+  object-fit: cover;
+  height: 100%;
+  display: block;
+  width: 100%;
+}
+.sneakersCatalog .mycontainer .cards .mycard .card-footer {
+  padding: 1.4vh 1.4vw;
+  width: 100%;
+}
+.sneakersCatalog .mycontainer .cards .mycard .card-footer h5 {
+  font-family: InterBold;
+  font-size: 1.2vw;
+  margin-bottom: 0.8vh;
+}
+.sneakersCatalog .mycontainer .cards .mycard .card-footer p {
+  font-family: Akshar;
+  margin-bottom: 0;
+}
+.sneakersCatalog .mycontainer .btnSecond {
+  max-width: 300px;
+  padding: 10px 0;
+  width: 15vw;
+  display: inline-block;
+  margin: auto;
+  font-size: 1.2rem;
+  color: black;
+  border: 2px solid black;
+  transition: all 0.3s linear;
+  margin-top: 5vh;
+}
+.sneakersCatalog .mycontainer .btnSecond:hover {
+  background-color: rgb(38, 38, 38);
+  color: white;
+}
+
+.newArticleBlock {
+  width: 100%;
+  margin-top: 16vh;
+}
+.newArticleBlock .myContainer {
+  width: 84%;
+  margin: auto;
+}
+.newArticleBlock .myContainer .HAndMore {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid #5D5D5D;
+  padding-bottom: 2vh;
+}
+.newArticleBlock .myContainer .HAndMore .h h1 {
+  font-size: 3vw;
+  font-family: Nevduplenysh;
+}
+.newArticleBlock .myContainer .HAndMore .myDarkBtn {
+  width: 10vw;
+  border-radius: 12px;
+  padding-top: 1.4vh;
+  font-size: 2vw;
+  font-family: Nevduplenysh;
+}
+.newArticleBlock .myContainer .sliderBlock {
+  margin-top: 4vw;
+}
+.newArticleBlock .myContainer .sliderBlock .wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 80vw;
+  position: relative;
+}
+.newArticleBlock .myContainer .sliderBlock .wrapper i {
+  top: 36%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.newArticleBlock .myContainer .sliderBlock .wrapper i:active {
+  transform: translateY(-50%) scale(0.9);
+}
+.newArticleBlock .myContainer .sliderBlock .wrapper i:hover {
+  background: #f2f2f2;
+}
+.newArticleBlock .myContainer .sliderBlock .wrapper i:first-child {
+  left: -22px;
+  display: none;
+}
+.newArticleBlock .myContainer .sliderBlock .wrapper i:last-child {
+  right: -22px;
+}
+.newArticleBlock .myContainer .sliderBlock .wrapper .carouselItemsNew {
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  display: flex;
+  justify-content: space-between;
+}
+.newArticleBlock .myContainer .sliderBlock .wrapper .carouselItemsNew.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.newArticleBlock .myContainer .sliderBlock .wrapper .carouselItemsNew.dragging div {
+  pointer-events: none;
+}
+.newArticleBlock .myContainer .sliderBlock .wrapper .carouselItemsNew div {
+  object-fit: cover;
+  user-select: none;
+  width: 33.3333333333%;
+}
+.newArticleBlock .myContainer .sliderBlock .wrapper .carouselItemsNew > div {
+  margin-left: 14px;
+}
+.newArticleBlock .myContainer .sliderBlock .wrapper .carouselItemsNew div:first-child {
+  margin-left: 0px;
+}
+@media screen and (max-width: 900px) {
+  .newArticleBlock .myContainer .sliderBlock .wrapper .carouselItemsNew div {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .newArticleBlock .myContainer .sliderBlock .wrapper .carouselItemsNew div {
+    width: 100%;
+  }
+}
+.newArticleBlock .myContainer .sliderBlock .wrapper .mycard {
+  width: 18vw !important;
+  /* height: 40vh; */
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #5D5D5D;
+  margin-bottom: 5vh;
+}
+.newArticleBlock .myContainer .sliderBlock .wrapper .mycard .card-header {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 1.4vh 1.4vw;
+  /* font-weight: bold; */
+}
+.newArticleBlock .myContainer .sliderBlock .wrapper .mycard .card-header img {
+  width: 16%;
+  display: block;
+}
+.newArticleBlock .myContainer .sliderBlock .wrapper .mycard .card-header p {
+  margin-bottom: 0;
+  font-family: InterBold;
+  font-size: 1.2rem;
+}
+.newArticleBlock .myContainer .sliderBlock .wrapper .mycard .card-imgBlock {
+  width: 100%;
+  height: 18vw;
+}
+.newArticleBlock .myContainer .sliderBlock .wrapper .mycard .card-imgBlock img {
+  object-fit: cover;
+  height: 100%;
+  display: block;
+  width: 100%;
+}
+.newArticleBlock .myContainer .sliderBlock .wrapper .mycard .card-footer {
+  padding: 1.4vh 1.4vw;
+  width: 100%;
+}
+.newArticleBlock .myContainer .sliderBlock .wrapper .mycard .card-footer h5 {
+  font-family: InterBold;
+  font-size: 1.2vw;
+  margin-bottom: 0.8vh;
+}
+.newArticleBlock .myContainer .sliderBlock .wrapper .mycard .card-footer p {
+  font-family: Akshar;
+  margin-bottom: 0;
+}
+
+.dealOfTheDayBlock {
+  width: 100%;
+  margin-top: 16vh;
+}
+.dealOfTheDayBlock .myContainer {
+  width: 84%;
+  margin: auto;
+}
+.dealOfTheDayBlock .myContainer .HAndMore {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 2px solid #5D5D5D;
+  padding-bottom: 2vh;
+}
+.dealOfTheDayBlock .myContainer .HAndMore .h h1 {
+  font-size: 3vw;
+  font-family: Nevduplenysh;
+}
+.dealOfTheDayBlock .myContainer .HAndMore .myDarkBtn {
+  width: 10vw;
+  border-radius: 12px;
+  padding-top: 1.4vh;
+  font-size: 2vw;
+  font-family: Nevduplenysh;
+}
+.dealOfTheDayBlock .myContainer .sliderBlock {
+  margin-top: 4vw;
+}
+.dealOfTheDayBlock .myContainer .sliderBlock .wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  max-width: 80vw;
+  position: relative;
+}
+.dealOfTheDayBlock .myContainer .sliderBlock .wrapper i {
+  top: 36%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.dealOfTheDayBlock .myContainer .sliderBlock .wrapper i:active {
+  transform: translateY(-50%) scale(0.9);
+}
+.dealOfTheDayBlock .myContainer .sliderBlock .wrapper i:hover {
+  background: #f2f2f2;
+}
+.dealOfTheDayBlock .myContainer .sliderBlock .wrapper i:first-child {
+  left: -22px;
+  display: none;
+}
+.dealOfTheDayBlock .myContainer .sliderBlock .wrapper i:last-child {
+  right: -22px;
+}
+.dealOfTheDayBlock .myContainer .sliderBlock .wrapper .carouselItemsDeal {
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  display: flex;
+  justify-content: space-between;
+}
+.dealOfTheDayBlock .myContainer .sliderBlock .wrapper .carouselItemsDeal.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.dealOfTheDayBlock .myContainer .sliderBlock .wrapper .carouselItemsDeal.dragging div {
+  pointer-events: none;
+}
+.dealOfTheDayBlock .myContainer .sliderBlock .wrapper .carouselItemsDeal div {
+  object-fit: cover;
+  user-select: none;
+  width: 33.3333333333%;
+}
+.dealOfTheDayBlock .myContainer .sliderBlock .wrapper .carouselItemsDeal > div {
+  margin-left: 14px;
+}
+.dealOfTheDayBlock .myContainer .sliderBlock .wrapper .carouselItemsDeal div:first-child {
+  margin-left: 0px;
+}
+@media screen and (max-width: 900px) {
+  .dealOfTheDayBlock .myContainer .sliderBlock .wrapper .carouselItemsDeal div {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .dealOfTheDayBlock .myContainer .sliderBlock .wrapper .carouselItemsDeal div {
+    width: 100%;
+  }
+}
+.dealOfTheDayBlock .myContainer .sliderBlock .wrapper .mycard {
+  width: 18vw !important;
+  /* height: 40vh; */
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #5D5D5D;
+  margin-bottom: 5vh;
+}
+.dealOfTheDayBlock .myContainer .sliderBlock .wrapper .mycard .card-header {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  padding: 1.4vh 1.4vw;
+  /* font-weight: bold; */
+}
+.dealOfTheDayBlock .myContainer .sliderBlock .wrapper .mycard .card-header img {
+  width: 16%;
+  display: block;
+}
+.dealOfTheDayBlock .myContainer .sliderBlock .wrapper .mycard .card-header p {
+  margin-bottom: 0;
+  font-family: InterBold;
+  font-size: 1.2rem;
+}
+.dealOfTheDayBlock .myContainer .sliderBlock .wrapper .mycard .card-imgBlock {
+  width: 100%;
+  height: 18vw;
+}
+.dealOfTheDayBlock .myContainer .sliderBlock .wrapper .mycard .card-imgBlock img {
+  object-fit: cover;
+  height: 100%;
+  display: block;
+  width: 100%;
+}
+.dealOfTheDayBlock .myContainer .sliderBlock .wrapper .mycard .card-footer {
+  padding: 1.4vh 1.4vw;
+  width: 100%;
+}
+.dealOfTheDayBlock .myContainer .sliderBlock .wrapper .mycard .card-footer h5 {
+  font-family: InterBold;
+  font-size: 1.2vw;
+  margin-bottom: 0.8vh;
+}
+.dealOfTheDayBlock .myContainer .sliderBlock .wrapper .mycard .card-footer p {
+  font-family: Akshar;
+  margin-bottom: 0;
+}
+
+footer {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 16vh;
+  border-top: 3px solid black;
+  justify-content: space-between;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+  font-size: 1.2rem;
+  font-family: InterBold;
+}
+footer .social {
+  display: flex;
+}
+footer .social a {
+  display: flex;
+  text-decoration: none;
+}
+footer .social a p {
+  font-family: InterBold;
+  margin-left: 1vw;
+}
+footer .social a p::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: #5D5D5D;
+  height: 2px;
+  transition: all 0.3s;
+  transform: scale(0);
+}
+footer .social a p:hover::after {
+  transform: scale(1);
+}
+footer .social a:link, footer .social a:visited {
+  color: black;
+  font-family: Akshar;
+}
+
+/* Общие стили */
