@@ -1,0 +1,282 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Nevduplenysh;
+  src: url("font/Nevduplenysh/Nevduplenysh-Regular.otf");
+}
+@font-face {
+  font-family: Akshar;
+  src: url("font/Akshar/Akshar-Light.ttf");
+}
+@font-face {
+  font-family: InterBold;
+  src: url("font/Inter/Inter-Bold.otf");
+}
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+header {
+  position: fixed;
+  background-color: #fff;
+  z-index: 100;
+  width: 100%;
+}
+header .mynav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 84%;
+  margin: auto;
+}
+header .mynav .logoBlock {
+  font-family: Akshar;
+  font-size: 3vw;
+  margin: 1vh 0;
+}
+header .mynav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+header .mynav .links a {
+  display: inline-block;
+  margin-right: 2vw;
+  text-decoration: none;
+}
+header .mynav .links a p {
+  margin-bottom: 0;
+  font-size: 1.1em;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  border: 0 solid black;
+}
+header .mynav .links a p::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: #5D5D5D;
+  height: 1px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+header .mynav .links a p:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+header .mynav .links a:link, header .mynav .links a:visited {
+  color: #5D5D5D;
+  font-family: Akshar;
+}
+header .mynav .favouriteAndCart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 9%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+header .mynav .favouriteAndCart i {
+  cursor: pointer;
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
+  display: inline-block;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+header .mynav .favouriteAndCart i:hover {
+  -webkit-transform: scale(1.85);
+          transform: scale(1.85);
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 80vw;
+  margin: auto;
+  padding-top: 16vh;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.main .photosSide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  margin-right: 4vw;
+}
+.main .photosSide .bigImg {
+  width: 100%;
+}
+.main .photosSide .bigImg img {
+  width: 100%;
+}
+.main .photosSide .smallImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2vh;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+.main .photosSide .smallImages img {
+  width: 20%;
+}
+.main .infoSide {
+  width: 50%;
+}
+.main .infoSide .topInf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+.main .infoSide .sizes .sizesCircles .circleSize {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 50%;
+  border: 2px solid black;
+  font-size: 1.3em;
+  cursor: pointer;
+  margin-right: 1.2vw;
+  margin-bottom: 2vh;
+  -webkit-transition: 0.2s linear all;
+  transition: 0.2s linear all;
+}
+.main .infoSide .sizes .sizesCircles .circleSize:hover {
+  background-color: black;
+  color: #fff;
+}
+.main .infoSide .costAndBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 4vh;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main .infoSide .costAndBtn .cost {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 16vh;
+  border-top: 3px solid black;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 3vh;
+  padding-bottom: 5vh;
+  font-size: 1.2rem;
+  font-family: InterBold;
+}
+footer .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+footer .social a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+}
+footer .social a p {
+  font-family: InterBold;
+  margin-left: 1vw;
+}
+footer .social a p::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-color: #5D5D5D;
+  height: 2px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+footer .social a p:hover::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+footer .social a:link, footer .social footer .social a:visited {
+  color: black;
+  font-family: Akshar;
+}
+
+/* Модальное */
+.myModalHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 0;
+}
+
+.myModalFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 4vh;
+  border: 0px;
+}
+.myModalFooter p {
+  font-size: 0.85em;
+  cursor: pointer;
+}

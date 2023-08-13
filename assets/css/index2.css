@@ -68,7 +68,7 @@ header .mynav .links a:link, header .mynav .links a:visited {
 }
 header .mynav .favouriteAndCart {
   display: flex;
-  width: 5%;
+  width: 116%;
   justify-content: space-between;
 }
 header .mynav .favouriteAndCart i {

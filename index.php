@@ -1,3 +1,4 @@
+<?php include("path.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,66 +6,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link href="css/index.css" rel="stylesheet">
-  <link href="css/fontello.css" rel="stylesheet">
-  <link href="css/buttonStyles.css" rel="stylesheet">
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+ 
+  <!-- <link href="css/index2.css" rel="stylesheet"> -->
+  <link href="assets/css/fontello.css" rel="stylesheet">
+  <!-- <link href="css/buttonStyles.css" rel="stylesheet"> -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <link href="index.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <nav class="mynav">
-      <h1 class="logoBlock">SneakStore</h1>
-      <div class="links">
-        <a href="#"><p>Men</p></a>
-        <a href="#"><p>Women</p></a>
-        <a href="#"><p>Kids</p></a>
-        <a href="#"><p>Classic</p></a>
-        <a href="#"><p>New Article</p></a>
-      </div>
-      <div class="favouriteAndCart">
-        <i class="fa-solid fa-cart-shopping"></i>
-        <i class="fa-regular fa-heart"></i>
-      </div>
-      <!-- <div class="searchBlock">
-        <input type="text" placeholder="Search..."></input>
-        <i class="fa-solid fa-magnifying-glass"></i>
-      </div> -->
-     
-    </nav>
-  </header>
-  <!-- <div class="container-fluid">
-    <div class="row">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Бонусы</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Доставка</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">О компании</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </div> -->
+  <?php include("app/include/header.php"); ?>
+  
 
   <section class="mySlider">
     <div id="carouselExampleIndicators" class="carousel slide">
@@ -78,13 +31,13 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="images/sneakers1.jpg" class="d-block w-100" alt="...">
+          <img src="assets/images/sneakers1.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="images/sneakers2.jpg" class="d-block w-100" alt="...">
+          <img src="assets/images/sneakers2.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="images/sneakers3.jpg" class="d-block w-100" alt="...">
+          <img src="assets/images/sneakers3.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -124,12 +77,28 @@
       <div class="cards">
        
         <div class="mycard">
+          <a href="pages/item.php">
+            <div class="card-header">
+              <img src="assets/images/nike.png">
+              <p>$15.00</p>
+            </div>
+            <div class="card-imgBlock">
+              <img src="assets/images/CAMPUS X BAD BUNNY BEIGE.jfif">
+            </div>
+            <div class="card-footer">
+              <h5>Piy piy</h5>
+              <p>Piri piri</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="mycard">
           <div class="card-header">
-            <img src="images/nike.png">
+            <img src="assets/images/nike.png">
             <p>$15.00</p>
           </div>
           <div class="card-imgBlock">
-            <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+            <img src="assets/images/CAMPUS X BAD BUNNY BEIGE.jfif">
           </div>
           <div class="card-footer">
             <h5>Piy piy</h5>
@@ -139,11 +108,11 @@
 
         <div class="mycard">
           <div class="card-header">
-            <img src="images/nike.png">
+            <img src="assets/images/nike.png">
             <p>$15.00</p>
           </div>
           <div class="card-imgBlock">
-            <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+            <img src="assets/images/CAMPUS X BAD BUNNY BEIGE.jfif">
           </div>
           <div class="card-footer">
             <h5>Piy piy</h5>
@@ -153,11 +122,11 @@
 
         <div class="mycard">
           <div class="card-header">
-            <img src="images/nike.png">
+            <img src="assets/images/nike.png">
             <p>$15.00</p>
           </div>
           <div class="card-imgBlock">
-            <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+            <img src="assets/images/CAMPUS X BAD BUNNY BEIGE.jfif">
           </div>
           <div class="card-footer">
             <h5>Piy piy</h5>
@@ -167,11 +136,11 @@
 
         <div class="mycard">
           <div class="card-header">
-            <img src="images/nike.png">
+            <img src="assets/images/nike.png">
             <p>$15.00</p>
           </div>
           <div class="card-imgBlock">
-            <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+            <img src="assets/images/CAMPUS X BAD BUNNY BEIGE.jfif">
           </div>
           <div class="card-footer">
             <h5>Piy piy</h5>
@@ -181,11 +150,11 @@
 
         <div class="mycard">
           <div class="card-header">
-            <img src="images/nike.png">
+            <img src="assets/images/nike.png">
             <p>$15.00</p>
           </div>
           <div class="card-imgBlock">
-            <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+            <img src="assets/images/CAMPUS X BAD BUNNY BEIGE.jfif">
           </div>
           <div class="card-footer">
             <h5>Piy piy</h5>
@@ -195,11 +164,11 @@
 
         <div class="mycard">
           <div class="card-header">
-            <img src="images/nike.png">
+            <img src="assets/images/nike.png">
             <p>$15.00</p>
           </div>
           <div class="card-imgBlock">
-            <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+            <img src="assets/images/CAMPUS X BAD BUNNY BEIGE.jfif">
           </div>
           <div class="card-footer">
             <h5>Piy piy</h5>
@@ -209,25 +178,11 @@
 
         <div class="mycard">
           <div class="card-header">
-            <img src="images/nike.png">
+            <img src="assets/images/nike.png">
             <p>$15.00</p>
           </div>
           <div class="card-imgBlock">
-            <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
-          </div>
-          <div class="card-footer">
-            <h5>Piy piy</h5>
-            <p>Piri piri</p>
-          </div>
-        </div>
-
-        <div class="mycard">
-          <div class="card-header">
-            <img src="images/nike.png">
-            <p>$15.00</p>
-          </div>
-          <div class="card-imgBlock">
-            <img src="images/CAMPUS X BAD BUNNY BEIGE.jfif">
+            <img src="assets/images/CAMPUS X BAD BUNNY BEIGE.jfif">
           </div>
           <div class="card-footer">
             <h5>Piy piy</h5>
@@ -569,19 +524,95 @@
     </div>
   </section>
 
-  <footer>
-    <p>©2023 SneakStore. All rights reserved.</p>
-    <div class="social">
-      <a href="https://www.instagram.com/arspalazzz/"><p class="text-uppercase">instagram</p></a>
-      <a href="linkedin.com/in/arseniy-palaznik-ba7b41263"><p class="text-uppercase">linkedin</p></a>
-      <a href="https://github.com/ArsPalazzz"><p class="text-uppercase">github</p></a>
-      <a href="https://t.me/arsPalazzz"><p class="text-uppercase">telegram</p></a>
-    </div>
-  </footer>
+ 
 
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script src="js/sliderTop.js"></script>
-  <script src="js/sliderBottom.js"></script>
+  <?php include("app/include/footer.php"); ?>
+
+
+
+
+
+
+
+
+
+  <div class="modal fade" id="signinModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header myModalHeader">
+          
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Sign In</h1>
+        </div>
+        <div class="modal-body">
+          <form method="post" action="app/controllers/users.php">
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Email:</label>
+              <input type="text" class="form-control" id="recipient-name" name="email-signin">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Password:</label>
+              <!-- <textarea class="form-control" id="message-text"></textarea> -->
+              <input type="password" class="form-control" id="message-text" name="pass-signin">
+            </div>
+            <input type="submit" class="btn btn-primary" value="Sign In" name="signInBtn"></input>
+          </form>
+        </div>
+        <div class="modal-footer myModalFooter">
+         
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+        
+          <p data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signupModal">I don't have an account</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header myModalHeader">
+         
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Sign Up</h1>
+        </div>
+        <div class="modal-body">
+          <form method="post" action="app/controllers/users.php">
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Username:</label>
+              <input type="text" class="form-control" id="recipient-name" name="username-signup">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Email:</label>
+              <input type="email" class="form-control" id="recipient-name" name="email-signup">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Password:</label>
+              <!-- <textarea class="form-control" id="message-text"></textarea> -->
+              <input type="password" class="form-control" id="message-text" name="pass1-signup">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Confirm password:</label>
+              <!-- <textarea class="form-control" id="message-text"></textarea> -->
+              <input type="password" class="form-control" id="message-text" name="pass2-signup">
+            </div>
+            <input type="submit" class="btn btn-primary" value="Sign Up" name="signUpBtn"></input>
+          </form>
+        </div>
+        <div class="modal-footer myModalFooter">
+         
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+         
+          <p data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#signinModal">I already have an account</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/sliderTop.js"></script>
+  <script src="assets/js/sliderBottom.js"></script>
   <script src="index.js"></script>
 </body>
 

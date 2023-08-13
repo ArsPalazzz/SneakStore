@@ -17,7 +17,12 @@
     font-family: InterBold;
     src: url('../font/Inter/Inter-Bold.otf');
 }
-
+::-webkit-scrollbar {
+    width: 0;
+  }
+  body {
+    box-sizing: border-box;
+  }
 
 
 .mySlider .carousel-item {
@@ -697,6 +702,23 @@ footer {
 
 
 /* Общие стили */
+
+.myModalHeader {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+  }
+  
+  .myModalFooter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4vh;
+    border: 0px;
+
+    p {
+        cursor: pointer;
+    }
+  }
 // *, *:after, *:before { 
 	
 // 	box-sizing: border-box; 
